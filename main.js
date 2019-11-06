@@ -15,11 +15,7 @@ let message = prompt('What do you guess?');
     } else {
         message = prompt('Ops! Maybe, another try?')
     }
-}
-const image = document.getElementById('image'); */
-image.innerHTML = `
-  <iframe src="https://giphy.com/embed/11sBLVxNs7v6WA" width="480" height="217" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cheer-cheering-11sBLVxNs7v6WA"></a></p>
-`;
+}*/
 /*   マイルストーン2   */
 // for文で完成したら、for文箇所をコメントアウトし、while文で書き換えてみましょう。
 let i = 0;
@@ -31,3 +27,7 @@ while ( i < 5){
         message = prompt('Ops! Maybe, another try?')
     }
 }
+const image = document.getElementById('image'); 
+image.innerHTML = `
+  <iframe src="https://giphy.com/embed/11sBLVxNs7v6WA" width="480" height="217" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cheer-cheering-11sBLVxNs7v6WA"></a></p>
+`;
