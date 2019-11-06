@@ -8,7 +8,7 @@ let message = prompt('What do you guess?');
 // forループで１から５までの数値で、答えの2が当たるまで推測を促すpromptを表示させる。
 // ヒント１：if文とも組み合わせて、推測が当たった場合はalertで'Good job! See what happens next :)'を表示。当たったらゲーム終了にする。
 // ヒント２：外れたらpromptで'Ops! Maybe, another try?'のメッセージとともに記入欄を表示。
-for (let i = 0; i < 5; i++) {
+/*for (let i = 0; i < 5; i++) {
     if (message == answer){
         alert('Good job! See what happens next')
         break;
@@ -16,9 +16,18 @@ for (let i = 0; i < 5; i++) {
         message = prompt('Ops! Maybe, another try?')
     }
 }
-const image = document.getElementById('image'); 
+const image = document.getElementById('image'); */
 image.innerHTML = `
   <iframe src="https://giphy.com/embed/11sBLVxNs7v6WA" width="480" height="217" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cheer-cheering-11sBLVxNs7v6WA"></a></p>
 `;
 /*   マイルストーン2   */
 // for文で完成したら、for文箇所をコメントアウトし、while文で書き換えてみましょう。
+let i = 0;
+while ( i < 5){
+    if (message == answer){
+        alert('Good job! See what happens next')
+        break;
+    } else {
+        message = prompt('Ops! Maybe, another try?')
+    }
+}
